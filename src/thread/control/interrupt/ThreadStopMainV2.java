@@ -1,6 +1,6 @@
 package thread.control.interrupt;
 
-import static thread.start.MyLogger.log;
+import static util.MyLogger.log;
 import static util.ThreadUtils.sleep;
 
 public class ThreadStopMainV2 {

@@ -1,6 +1,6 @@
 package thread.control.join;
 
-import static thread.start.MyLogger.log;
+import static util.MyLogger.log;
 import static util.ThreadUtils.sleep;
 
 // main 스레드에 join 을 사용하면 WAITING(대기 상태) 상태가 된다.

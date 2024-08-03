@@ -1,6 +1,6 @@
 package thread.control.join;
 
-import static thread.start.MyLogger.log;
+import static util.MyLogger.log;
 import static util.ThreadUtils.sleep;
 
 // MainV1에서 main 스레드가 기다리지 않는 것을 sleep()을 활용하여 해결해보자.

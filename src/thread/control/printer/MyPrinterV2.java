@@ -4,7 +4,7 @@ import java.util.Queue;
 import java.util.Scanner;
 import java.util.concurrent.ConcurrentLinkedQueue;
 
-import static thread.start.MyLogger.log;
+import static util.MyLogger.log;
 
 public class MyPrinterV2 {
 
@@ -12,6 +12,7 @@ public class MyPrinterV2 {
         Printer printer = new Printer();
         Thread printerThread = new Thread(printer, "printer");
         printerThread.start();
+
         Scanner userInput = new Scanner(System.in);
         while (true) {
             System.out.println("프린터할 문서를 입력하세요. 종료 (q): ");
@@ -28,9 +29,10 @@ public class MyPrinterV2 {
     static class Printer implements Runnable {
         volatile boolean work = true;
         Queue<String> jobQueue = new ConcurrentLinkedQueue<>();
-        @Override
 
+        @Override
         public void run() {
+
             while (work) {
                 if (jobQueue.isEmpty()) {
                     continue;

@@ -1,6 +1,6 @@
 package thread.start;
 
-import static thread.start.MyLogger.log;
+import static util.MyLogger.log;
 
 // 익명 클래스를 사용하여 Runnable 만들기
 public class InnerRunnableMainV3 {

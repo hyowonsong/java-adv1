@@ -1,6 +1,6 @@
 package util;
 
-import static thread.start.MyLogger.log;
+import static util.MyLogger.log;
 
 // 체크 예외를 런타임 예외로 변경하는 간단한 유틸리티를 만들어 사용하자.
 public class ThreadUtils {

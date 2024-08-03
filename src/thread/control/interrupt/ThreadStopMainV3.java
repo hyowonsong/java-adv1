@@ -1,6 +1,6 @@
 package thread.control.interrupt;
 
-import static thread.start.MyLogger.log;
+import static util.MyLogger.log;
 import static util.ThreadUtils.sleep;
 
 // MainV3로 while 문에서 인터럽트의 상태를 직접 확인하도록 코드를 변경해보자.

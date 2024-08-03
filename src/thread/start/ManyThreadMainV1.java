@@ -1,5 +1,5 @@
 package thread.start;
-import static thread.start.MyLogger.log;
+import static util.MyLogger.log;
 
 
 public class ManyThreadMainV1 {

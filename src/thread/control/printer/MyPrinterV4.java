@@ -4,7 +4,7 @@ import java.util.Queue;
 import java.util.Scanner;
 import java.util.concurrent.ConcurrentLinkedQueue;
 
-import static thread.start.MyLogger.log;
+import static util.MyLogger.log;
 
 public class MyPrinterV4 {
 
@@ -12,6 +12,7 @@ public class MyPrinterV4 {
         Printer printer = new Printer();
         Thread printerThread = new Thread(printer, "printer");
         printerThread.start();
+
         Scanner userInput = new Scanner(System.in);
         while (true) {
             System.out.println("프린터할 문서를 입력하세요. 종료 (q): ");
@@ -30,6 +31,7 @@ public class MyPrinterV4 {
         public void run() {
             while (!Thread.interrupted()) {
                 if (jobQueue.isEmpty()) {
+                    // yield 를 추가해서 양보를 해준다!
                     Thread.yield(); //추가
                     continue;
                 }

@@ -1,6 +1,6 @@
 package thread.control.interrupt;
 
-import static thread.start.MyLogger.log;
+import static util.MyLogger.log;
 import static util.ThreadUtils.sleep;
 
 // 이 방식은 main 스레드가 runFlag 를 false 로 변경해도, work 스레드는

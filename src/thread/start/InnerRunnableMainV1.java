@@ -1,6 +1,6 @@
 package thread.start;
 
-import static thread.start.MyLogger.log;
+import static util.MyLogger.log;
 
 // 중첩 클래스를 사용하여 Runnable 을 만들었다.
 public class InnerRunnableMainV1 {
